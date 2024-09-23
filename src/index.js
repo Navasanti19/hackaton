@@ -3,11 +3,24 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import NavbarComponent from './components/NavBar/Navbar';
+import ProgressBarComponent from './components/progressBar/progressBar';
+import FormComponent from './components/Form/form';
+import TimerComponent from './components/Timer/timer';
+import PasswordGenerator from './components/pswGen/passwordGen';
+import CharacterTable from './components/Table/table';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <NavbarComponent inverted={false} />
+    <NavbarComponent inverted={true} />
+    <ProgressBarComponent />
+    <FormComponent />
+    <TimerComponent />
+    <PasswordGenerator />
+    <CharacterTable />
   </React.StrictMode>
 );
 
